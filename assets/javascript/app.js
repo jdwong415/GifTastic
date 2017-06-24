@@ -15,7 +15,9 @@ $("#add-animal").on("click", function(event) {
   event.preventDefault();
   
   var animal = $("#animal-input").val().trim();
-  topics.push(animal);
+  if (animal.length > 0) {
+    topics.push(animal);
+  }
   renderButtons();
 });
 
@@ -50,8 +52,8 @@ function displayGifs() {
     $("#gif-holder").empty();
     for (var i = 0; i < data.length; i++) {
       var newDiv = $("<div>");
-      newDiv.css("display", "inline-block");
-      newDiv.css("margin", "0px 20px 10px 0px");
+      newDiv.addClass("image-div");
+
       var p = $("<p>");
       var str = "Rating: " + data[i].rating.toUpperCase();
       p.text(str);

@@ -17,13 +17,22 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin: 0 auto;
+  color: #fff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 p {
   font-weight: bold;
 }
 
 #button-holder {
-  border-bottom: 1px solid #A6A6A6;
-  margin-bottom: 10px;
+  border-bottom: 1px solid #D0D2D4;
+  margin-bottom: 20px;
 }
 
 .animals {
@@ -32,11 +41,15 @@ p {
   border: 1px solid #D0D2D4;
   padding: 5px 20px;
   font-size: 15px;
-  font-weight: bold;
 }
 
-.animals:hover {
+.animals:hover, .animals:focus {
   background-color: #fff;
+  outline: none;
+}
+
+.animals:focus, .animals:active {
+  font-weight: bold;
 }
 
 .btn {
@@ -44,7 +57,20 @@ p {
   color: #fff;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: #395898;
   color: #fff;
+}
+
+.image-div {
+  display: inline-block;
+  margin: 0px 20px 20px 0px;
+  background-color: white;
+  padding: 10px 15px 15px 15px;
+  border: 1px solid #D0D2D4;
+  border-radius: 5px;
+}
+
+.image-div:hover {
+  background-color: #e9ebee;
 }
