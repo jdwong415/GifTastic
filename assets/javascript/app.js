@@ -15,9 +15,13 @@ $("#add-animal").on("click", function(event) {
   event.preventDefault();
   
   var animal = $("#animal-input").val().trim();
-  if (animal.length > 0) {
+
+  if (animal.length > 0 && topics.indexOf(animal) === -1) {
     topics.push(animal);
-  }
+  }  
+
+  $("#animal-input").val("");
+
   renderButtons();
 });
 
