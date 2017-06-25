@@ -39,7 +39,7 @@ $(document).on("click", ".animal-image", function () {
 function displayGifs() {
   var q = $(this).text();
 
-  var queryURL="http://api.giphy.com/v1/gifs/search?q=" +
+  var queryURL="https://api.giphy.com/v1/gifs/search?q=" +
     q + "&api_key=dc6zaTOxFJmzC&limit=10";
 
   $.ajax({
